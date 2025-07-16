@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story - Dylan & Hallie's Wedding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Georgia', 'serif'],
+                        'script': ['Dancing Script', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .script { font-family: 'Dancing Script', cursive; }
+    </style>
+    <script src="auth.js"></script>
+</head>
+<body class="bg-gradient-to-b from-rose-50 to-pink-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-center space-x-8">
+                <a href="index.html" class="text-rose-600 hover:text-rose-800 transition-colors">Home</a>
+                <a href="story.html" class="text-rose-800 font-medium">Our Story</a>
+                <a href="details.html" class="text-rose-600 hover:text-rose-800 transition-colors">Wedding Details</a>
+                <a href="rsvp.html" class="text-rose-600 hover:text-rose-800 transition-colors">RSVP</a>
+                <a href="registry.html" class="text-rose-600 hover:text-rose-800 transition-colors">Registry</a>
+                <a href="travel.html" class="text-rose-600 hover:text-rose-800 transition-colors">Travel</a>
+                <a href="contact.html" class="text-rose-600 hover:text-rose-800 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-pink-100 via-rose-100 to-pink-100">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="script text-5xl md:text-6xl text-rose-800 mb-4">Our Story</h1>
+            <div class="w-32 h-0.5 bg-rose-300 mx-auto"></div>
+        </div>
+    </section>
+
+    <!-- Story Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="bg-gradient-to-br from-rose-100 to-pink-100 h-80 rounded-lg flex items-center justify-center">
+                        <p class="text-rose-600 text-lg">Photo of Dylan & Hallie</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        [Add your love story here - how you met, your journey together, what makes your relationship special]
+                    </p>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        [Add more details about your relationship, memorable moments, or what you're looking forward to in marriage]
+                    </p>
+                    <div class="text-center">
+                        <p class="script text-3xl text-rose-600">"We can't wait to celebrate with you!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Section -->
+            <div class="mt-20">
+                <h2 class="script text-4xl text-center text-rose-800 mb-16">Our Journey</h2>
+                <div class="space-y-8">
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-rose-600 font-medium">[Year]</span>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-xl font-medium text-rose-800 mb-2">How We Met</h3>
+                            <p class="text-gray-700">[Story of how you first met]</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-rose-600 font-medium">[Year]</span>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-xl font-medium text-rose-800 mb-2">First Date</h3>
+                            <p class="text-gray-700">[Story of your first date]</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-rose-600 font-medium">[Year]</span>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-xl font-medium text-rose-800 mb-2">The Proposal</h3>
+                            <p class="text-gray-700">[Story of the proposal]</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-rose-600 font-medium">[Year]</span>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-xl font-medium text-rose-800 mb-2">Getting Married!</h3>
+                            <p class="text-gray-700">And now we're here, ready to celebrate with all of you!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-rose-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="script text-3xl mb-4">Dylan & Hallie</h3>
+            <p class="text-rose-200 mb-4">[Wedding Date] • [Wedding Location]</p>
+            <p class="text-rose-300 text-sm">Can't wait to celebrate with you! ♥</p>
+        </div>
+    </footer>
+</body>
+</html> 

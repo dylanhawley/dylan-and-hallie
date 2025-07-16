@@ -1,9 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dylan & Hallie's Wedding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Georgia', 'serif'],
+                        'script': ['Dancing Script', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .script { font-family: 'Dancing Script', cursive; }
+    </style>
+    <script src="auth.js"></script>
 </head>
-<body>
-    <h1>Hi, we're getting married!</h1>
+<body class="bg-gradient-to-b from-rose-50 to-pink-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-center space-x-8">
+                <a href="index.html" class="text-rose-800 font-medium">Home</a>
+                <a href="story.html" class="text-rose-600 hover:text-rose-800 transition-colors">Our Story</a>
+                <a href="details.html" class="text-rose-600 hover:text-rose-800 transition-colors">Wedding Details</a>
+                <a href="rsvp.html" class="text-rose-600 hover:text-rose-800 transition-colors">RSVP</a>
+                <a href="registry.html" class="text-rose-600 hover:text-rose-800 transition-colors">Registry</a>
+                <a href="travel.html" class="text-rose-600 hover:text-rose-800 transition-colors">Travel</a>
+                <a href="contact.html" class="text-rose-600 hover:text-rose-800 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-pink-100 via-rose-100 to-pink-100">
+        <div class="text-center px-6">
+            <div class="mb-12">
+                <h1 class="script text-6xl md:text-8xl text-rose-800 mb-4">Dylan & Hallie</h1>
+                <div class="w-32 h-0.5 bg-rose-300 mx-auto mb-6"></div>
+                <p class="text-xl md:text-2xl text-rose-600 mb-2">are getting married!</p>
+                <p class="text-lg text-rose-500 mb-6">Save the Date</p>
+                <p class="text-2xl md:text-3xl font-serif text-rose-700 mt-4">[Wedding Date]</p>
+                <p class="text-lg text-rose-600 mt-2 mb-8">[Wedding Location]</p>
+                
+                <!-- Quick Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                    <a href="rsvp.html" class="bg-rose-600 text-white px-8 py-3 rounded-full hover:bg-rose-700 transition-colors text-lg">
+                        RSVP Now
+                    </a>
+                    <a href="details.html" class="border-2 border-rose-600 text-rose-600 px-8 py-3 rounded-full hover:bg-rose-600 hover:text-white transition-colors text-lg">
+                        Wedding Details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="script text-4xl md:text-5xl text-rose-800 mb-8">Welcome to Our Wedding Website</h2>
+            <p class="text-gray-700 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+                We're so excited to celebrate our special day with you! Explore our website to find all the details about our wedding, from the ceremony and reception to travel information and more.
+            </p>
+            
+            <!-- Quick Links Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mt-16">
+                <a href="story.html" class="bg-gradient-to-br from-rose-50 to-pink-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow group">
+                    <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-rose-200 transition-colors">
+                        <svg class="w-8 h-8 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium text-rose-800 mb-2">Our Story</h3>
+                    <p class="text-gray-600 text-sm">Learn about our journey together</p>
+                </a>
+                
+                <a href="details.html" class="bg-gradient-to-br from-rose-50 to-pink-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow group">
+                    <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-rose-200 transition-colors">
+                        <svg class="w-8 h-8 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a4 4 0 118 0v4m-4 8V9m0 2h.01M12 21a9 9 0 100-18 9 9 0 000 18z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium text-rose-800 mb-2">Wedding Details</h3>
+                    <p class="text-gray-600 text-sm">When, where, and what to expect</p>
+                </a>
+                
+                <a href="travel.html" class="bg-gradient-to-br from-rose-50 to-pink-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow group">
+                    <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-rose-200 transition-colors">
+                        <svg class="w-8 h-8 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-medium text-rose-800 mb-2">Travel & Stay</h3>
+                    <p class="text-gray-600 text-sm">Hotels and travel information</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-rose-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="script text-3xl mb-4">Dylan & Hallie</h3>
+            <p class="text-rose-200 mb-4">[Wedding Date] • [Wedding Location]</p>
+            <p class="text-rose-300 text-sm">Can't wait to celebrate with you! ♥</p>
+        </div>
+    </footer>
+
+
 </body>
 </html>

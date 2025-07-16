@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Accommodations - Dylan & Hallie's Wedding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Georgia', 'serif'],
+                        'script': ['Dancing Script', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .script { font-family: 'Dancing Script', cursive; }
+    </style>
+    <script src="auth.js"></script>
+</head>
+<body class="bg-gradient-to-b from-rose-50 to-pink-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-center space-x-8">
+                <a href="index.html" class="text-rose-600 hover:text-rose-800 transition-colors">Home</a>
+                <a href="story.html" class="text-rose-600 hover:text-rose-800 transition-colors">Our Story</a>
+                <a href="details.html" class="text-rose-600 hover:text-rose-800 transition-colors">Wedding Details</a>
+                <a href="rsvp.html" class="text-rose-600 hover:text-rose-800 transition-colors">RSVP</a>
+                <a href="registry.html" class="text-rose-600 hover:text-rose-800 transition-colors">Registry</a>
+                <a href="travel.html" class="text-rose-800 font-medium">Travel</a>
+                <a href="contact.html" class="text-rose-600 hover:text-rose-800 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-pink-100 via-rose-100 to-pink-100">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="script text-5xl md:text-6xl text-rose-800 mb-4">Travel & Accommodations</h1>
+            <div class="w-32 h-0.5 bg-rose-300 mx-auto"></div>
+        </div>
+    </section>
+
+    <!-- Travel Information -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Getting There -->
+                <div>
+                    <h2 class="script text-4xl text-rose-800 mb-8">Getting There</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-br from-rose-50 to-pink-50 rounded-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-medium text-rose-800">By Air</h3>
+                            </div>
+                            <div class="space-y-2 text-gray-700">
+                                <p><strong>Nearest Airport:</strong> [Airport Code] - [Airport Name]</p>
+                                <p><strong>Distance:</strong> [Distance] from venue</p>
+                                <p><strong>Rental Cars:</strong> Available at airport</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-rose-50 to-pink-50 rounded-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-medium text-rose-800">By Car</h3>
+                            </div>
+                            <div class="space-y-2 text-gray-700">
+                                <p><strong>Parking:</strong> [Parking information]</p>
+                                <p><strong>Directions:</strong> [Brief directions or GPS coordinates]</p>
+                                <p><strong>Traffic Tips:</strong> [Any traffic considerations]</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-rose-50 to-pink-50 rounded-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-medium text-rose-800">Public Transportation</h3>
+                            </div>
+                            <div class="space-y-2 text-gray-700">
+                                <p>[Public transportation options, if applicable]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Accommodations -->
+                <div>
+                    <h2 class="script text-4xl text-rose-800 mb-8">Where to Stay</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white border-2 border-rose-200 rounded-lg p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-xl font-medium text-gray-800">[Hotel Name 1]</h3>
+                                <span class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-sm">Recommended</span>
+                            </div>
+                            <div class="space-y-2 text-gray-700 mb-4">
+                                <p><strong>Address:</strong> [Hotel Address]</p>
+                                <p><strong>Distance:</strong> [Distance] from venue</p>
+                                <p><strong>Rate:</strong> [Nightly rate] per night</p>
+                                <p><strong>Amenities:</strong> [Pool, WiFi, Breakfast, etc.]</p>
+                            </div>
+                            <div class="bg-rose-50 rounded p-3 mb-4">
+                                <p class="text-sm text-rose-700"><strong>Group Rate:</strong> Use code "[DISCOUNT CODE]" for special pricing</p>
+                            </div>
+                            <button class="bg-rose-600 text-white px-6 py-2 rounded-full hover:bg-rose-700 transition-colors">
+                                Book Now
+                            </button>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-lg p-6">
+                            <h3 class="text-xl font-medium text-gray-800 mb-4">[Hotel Name 2]</h3>
+                            <div class="space-y-2 text-gray-700 mb-4">
+                                <p><strong>Address:</strong> [Hotel Address]</p>
+                                <p><strong>Distance:</strong> [Distance] from venue</p>
+                                <p><strong>Rate:</strong> [Nightly rate] per night</p>
+                                <p><strong>Amenities:</strong> [Pool, WiFi, Breakfast, etc.]</p>
+                            </div>
+                            <div class="bg-rose-50 rounded p-3 mb-4">
+                                <p class="text-sm text-rose-700"><strong>Group Rate:</strong> Use code "[DISCOUNT CODE]" for special pricing</p>
+                            </div>
+                            <button class="bg-rose-600 text-white px-6 py-2 rounded-full hover:bg-rose-700 transition-colors">
+                                Book Now
+                            </button>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-lg p-6">
+                            <h3 class="text-xl font-medium text-gray-800 mb-4">[Hotel Name 3]</h3>
+                            <div class="space-y-2 text-gray-700 mb-4">
+                                <p><strong>Address:</strong> [Hotel Address]</p>
+                                <p><strong>Distance:</strong> [Distance] from venue</p>
+                                <p><strong>Rate:</strong> [Nightly rate] per night</p>
+                                <p><strong>Amenities:</strong> [Pool, WiFi, Breakfast, etc.]</p>
+                            </div>
+                            <button class="bg-rose-600 text-white px-6 py-2 rounded-full hover:bg-rose-700 transition-colors">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="mt-20">
+                <h2 class="script text-4xl text-center text-rose-800 mb-12">Additional Information</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gradient-to-br from-rose-50 to-pink-50 rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-medium text-rose-800 mb-4">Weather</h3>
+                        <p class="text-gray-700">[Expected weather conditions for the wedding date/season]</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-rose-50 to-pink-50 rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-medium text-rose-800 mb-4">Local Attractions</h3>
+                        <p class="text-gray-700">[Nearby attractions or activities for out-of-town guests]</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-rose-50 to-pink-50 rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-medium text-rose-800 mb-4">Transportation</h3>
+                        <p class="text-gray-700">[Shuttle service, rideshare options, or other transportation details]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-rose-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="script text-3xl mb-4">Dylan & Hallie</h3>
+            <p class="text-rose-200 mb-4">[Wedding Date] • [Wedding Location]</p>
+            <p class="text-rose-300 text-sm">Can't wait to celebrate with you! ♥</p>
+        </div>
+    </footer>
+</body>
+</html> 
