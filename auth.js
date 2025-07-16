@@ -46,11 +46,12 @@
                     style="
                         width: 100%;
                         padding: 0.75rem;
-                        border-radius: 0.5rem;
                         font-size: 1rem;
                         margin-bottom: 1rem;
                         outline: none;
                         transition: border-color 0.3s;
+                        border: 2px solid #2E2E2E;
+                        color: #2E2E2E;
                     "
                     required
                 />
