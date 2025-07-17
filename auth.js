@@ -1,5 +1,5 @@
 (function() {
-    const PASSWORD = 'test';
+    const PASSWORD = 'loverson';
     const AUTH_KEY = 'dylan_hallie_wedding_auth';
     
     function isAuthenticated() {

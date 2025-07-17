@@ -1,0 +1,26 @@
+body,
+section.min-h-screen.flex.items-center.justify-center {
+  background-color: #949d62;
+}
+
+.script { font-family: 'Dancing Script', cursive; }
+
+@font-face {
+  font-family: 'Office';
+  src: url(fonts/OfficeTimesRound-RoundMono.otf);
+}
+
+nav {
+  font-family: 'Office';
+  font-size: 0.9rem;
+}
+
+@font-face {
+  font-family: 'Lydian';
+  src: url('fonts/LydianMTPro.otf');
+}
+
+.font-lydian {
+  font-family: 'Lydian', serif;
+}
+
