@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan & Hallie's Wedding - Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../auth.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="font-lancelot text-3xl fixed top-0 right-0 h-full flex flex-col items-end justify-center pr-8 space-y-2 z-50">
+        <a href="../index.html" class="hover:underline transition-colors">Events</a>
+        <a href="index.html" class="hover:underline transition-colors">Travel</a>
+        <a href="../story/index.html" class="hover:underline transition-colors">Our Story</a>
+        <!-- <a href="" class="hover:underline transition-colors">Wedding Party</a> -->
+        <!-- <a href="" class="hover:underline transition-colors">FAQs</a> -->
+        <!-- <a href="" class="hover:underline transition-colors">Registry</a> -->
+        <!-- <a href="" class="hover:underline transition-colors">RSVP</a> -->
+    </nav>
+
+    <!-- Main Content -->
+    <main class="min-h-screen pt-16 pb-16 px-6 lg:px-12">
+        <!-- Page Title -->
+        <div class="max-w-7xl mx-auto">
+            <h1 class="font-railey text-6xl md:text-7xl text-left mb-16">TRAVEL</h1>
+        </div>
+
+        <!-- Hotel and Airports Section -->
+        <div class="max-w-7xl mx-auto mb-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                <!-- Hotel Room Block Section -->
+                <div class="text-center lg:text-left">
+                    <h2 class="font-lancelot text-4xl mb-6 uppercase">Hotel Room Block</h2>
+                    <p class="font-lydian text-lg leading-relaxed">
+                        We have reserved a block of rooms at [Hotel Name] for our wedding guests. 
+                        Please book by [date] to secure the group rate. Use the code [CODE] when making 
+                        your reservation. The hotel is conveniently located near our wedding venue and 
+                        offers complimentary breakfast and WiFi.
+                    </p>
+                </div>
+
+                <!-- Airports Section -->
+                <div class="text-center lg:text-left">
+                    <h2 class="font-lancelot text-4xl mb-6 uppercase">Airports</h2>
+                    <p class="font-lydian text-lg leading-relaxed">
+                        The closest airport to St. Augustine is Jacksonville International Airport (JAX), 
+                        approximately 1 hour drive from the city. Orlando International Airport (MCO) 
+                        is about 2 hours away but often has more flight options. We recommend renting 
+                        a car for easy transportation to the venue and around the historic city.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Recommendations Section -->
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-lancelot text-4xl mb-8 uppercase">Other Recommendations</h2>
+            <p class="font-lydian text-lg leading-relaxed mb-12">
+                St. Augustine is America's oldest city, rich with history and charm. We've marked some 
+                of our favorite spots on the map below - from historic landmarks to delicious restaurants 
+                and beautiful beaches. We hope you'll have time to explore this magical city during 
+                your visit!
+            </p>
+            
+            <!-- Embedded Map -->
+            <div class="flex justify-center">
+                <iframe 
+                    src="https://www.google.com/maps/d/embed?mid=1i6RK3CJQ5BhO9Wcq5IB5B5NU3u-Oqoc&ehbc=2E312F" 
+                    width="640" 
+                    height="480"
+                    class="border-0 rounded-lg shadow-lg max-w-full">
+                </iframe>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
