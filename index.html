@@ -5,49 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dylan & Hallie's Wedding</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'serif': ['Georgia', 'serif'],
-                        'script': ['Dancing Script', 'cursive']
-                    }
-                }
-            }
-        }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="auth.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="min-h-screen">
     <!-- Navigation -->
-    <nav class="fixed top-0 right-0 h-full flex flex-col items-end justify-center pr-8 space-y-2 z-50">
-        <a href="" class="hover:underline transition-colors">The Details</a>
+    <nav class="font-lancelot text-3xl fixed top-0 right-0 h-full flex flex-col items-end justify-center pr-8 space-y-2 z-50">
+        <a href="" class="hover:underline transition-colors">Events</a>
+        <a href="" class="hover:underline transition-colors">Travel</a>
         <a href="" class="hover:underline transition-colors">Our Story</a>
-        <a href="" class="hover:underline transition-colors">Wedding Party</a>
-        <a href="" class="hover:underline transition-colors">FAQs</a>
-        <a href="" class="hover:underline transition-colors">Registry</a>
-        <a href="" class="hover:underline transition-colors">RSVP</a>
+        <!-- <a href="" class="hover:underline transition-colors">Wedding Party</a> -->
+        <!-- <a href="" class="hover:underline transition-colors">FAQs</a> -->
+        <!-- <a href="" class="hover:underline transition-colors">Registry</a> -->
+        <!-- <a href="" class="hover:underline transition-colors">RSVP</a> -->
     </nav>
 
     <!-- Hero Section -->
     <section class="min-h-screen flex items-center justify-center">
-        <div class="text-center px-6">
-            <div class="mb-12">
-                <h1 class="script text-6xl md:text-8xl mb-4">Dylan & Hallie</h1>
-                <p class="uppercase font-lydian text-2xl">June 26, 2026</p>
-                <p class="uppercase font-lydian text-2xl">St. Augustine, FL</p>
-                
-                <!-- Quick Action Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                    <a href="" class="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors text-lg">
-                        RSVP
-                    </a>
+        <div class="flex flex-col lg:flex-row w-full max-w-7xl mx-auto px-6 gap-8 lg:gap-12">
+            <!-- Hero Content -->
+            <div class="flex-1 flex items-center justify-center">
+                <div class="text-center">
+                    <div class="mb-12">
+                        <h1 class="font-railey text-6xl md:text-8xl mb-4">Dylan & Hallie</h1>
+                        <p class="uppercase font-lancelot text-3xl">June 26, 2026</p>
+                        <p class="uppercase font-lancelot text-3xl">St. Augustine, FL</p>
+                        <p id="countdown" class="uppercase font-lancelot text-3xl mt-4"></p>
+                    </div>
                 </div>
+            </div>
+            
+            <!-- Image Section -->
+            <div class="flex-1 flex items-center justify-center lg:justify-end order-last">
+                <img src="images/us.png" alt="Dylan and Hallie" class="max-w-full h-auto max-h-[70vh] object-contain">
             </div>
         </div>
     </section>
+
+    <script>
+        function updateCountdown() {
+            const weddingDate = new Date('June 26, 2026');
+            const now = new Date();
+            const timeDifference = weddingDate - now;
+            const daysRemaining = Math.ceil(timeDifference / (1000 * 3600 * 24));
+            
+            const countdownElement = document.getElementById('countdown');
+            if (daysRemaining > 0) {
+                countdownElement.textContent = `${daysRemaining} days to go!`;
+            } else if (daysRemaining === 0) {
+                countdownElement.textContent = "Today's the day!";
+            } else {
+                countdownElement.textContent = "The wedding has passed!";
+            }
+        }
+        
+        // Update countdown immediately and then every minute
+        updateCountdown();
+        setInterval(updateCountdown, 60 * 1000);
+    </script>
 </body>
 </html>

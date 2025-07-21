@@ -37,7 +37,7 @@
         `;
         
         modal.innerHTML = `
-            <img src="https://media-public.canva.com/2jwBc/MAGWga2jwBc/1/t.png" alt="Swan Couple Doodle" style="width: 100%; margin-bottom: 2rem;">
+            <img src="images/swans.png" alt="Swan Couple Doodle" style="width: 100%; margin-bottom: 2rem;">
             <form id="auth-form" style="margin-bottom: 1rem;">
                 <input 
                     type="password" 

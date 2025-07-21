@@ -3,16 +3,15 @@ section.min-h-screen.flex.items-center.justify-center {
   background-color: #949d62;
 }
 
-.script { font-family: 'Dancing Script', cursive; }
-
 @font-face {
-  font-family: 'Office';
-  src: url(fonts/OfficeTimesRound-RoundMono.otf);
+  font-family: 'Lancelot';
+  src: url('fonts/Lancelot-Regular.ttf');
 }
 
-nav {
-  font-family: 'Office';
-  font-size: 0.9rem;
+.font-lancelot {
+  font-family: "Lancelot", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
@@ -24,3 +23,11 @@ nav {
   font-family: 'Lydian', serif;
 }
 
+@font-face {
+  font-family: 'Railey';
+  src: url('fonts/Railey.ttf');
+}
+
+.font-railey {
+  font-family: 'Railey', serif;
+}
