@@ -21,15 +21,17 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="min-h-screen pt-16 px-6 lg:px-12">
+    <main class="min-h-screen flex flex-col">
         <!-- Page Title -->
-        <div class="max-w-7xl mx-auto">
-            <h1 class="font-railey text-6xl md:text-7xl text-left mb-16">TRAVEL</h1>
+        <div class="flex justify-center px-8 pt-8 md:pt-16">
+            <div class="max-w-5xl w-full">
+                <h1 class="uppercase font-railey text-6xl md:text-7xl text-left mb-16">Travel</h1>
+            </div>
         </div>
 
         <!-- Hotel and Airports Section -->
-        <div class="max-w-7xl mx-auto mb-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+        <div class="flex-grow flex items-center justify-center px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 max-w-7xl w-full">
                 <!-- Hotel Room Block Section -->
                 <div class="text-center lg:text-left">
                     <h2 class="font-lancelot text-4xl mb-6 uppercase">Hotel Room Block</h2>
@@ -49,7 +51,7 @@
         </div>
 
         <!-- Other Recommendations Section -->
-        <div class="max-w-4xl mx-auto text-center">
+        <div class="max-w-4xl mx-auto px-6 mt-16 text-center">
             <h2 class="font-lancelot text-4xl mb-8 uppercase">Other Recommendations</h2>
             <p class="font-lydian text-lg leading-relaxed mb-12">
                 We've put together a collection of other places to stay, things to do, and spots to eat around town to help you make the most of your trip. We've added an interactive map below so you can get a feel for the area and see where everything's happening. Use it to explore the weekend's locations and find the best spot to stay. We're so grateful you're making the trip, it means the world to us!
@@ -65,11 +67,11 @@
                 </iframe>
             </div>
         </div>
-    </main>
 
-    <!-- Swans Image -->
-    <div class="flex justify-center py-6">
-        <img src="../images/swans.png" alt="Swans" class="w-24 h-auto opacity-80">
-    </div>
+        <!-- Swans Image -->
+        <div class="flex justify-center py-6 mt-auto">
+            <img src="../images/swans.png" alt="Swans" class="w-24 h-auto opacity-80">
+        </div>
+    </main>
 </body>
 </html>
