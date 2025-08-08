@@ -10,7 +10,7 @@
 </head>
 <body class="min-h-screen">
     <!-- Mobile Menu Button -->
-    <button id="menuButton" aria-controls="mobileMenu" aria-expanded="false" class="md:hidden fixed top-4 right-4 z-50 inline-flex flex-col items-center justify-center gap-1.5 rounded-full border border-black/20 bg-[#949d62]/90 px-3 py-3 shadow-md focus:outline-none focus:ring-2 focus:ring-black/20" type="button">
+    <button id="menuButton" aria-controls="mobileMenu" aria-expanded="false" class="md:hidden fixed top-8 md:top-16 right-4 z-50 inline-flex flex-col items-center justify-center gap-1.5 rounded-full border border-black/20 bg-[#949d62]/90 px-3 py-3 shadow-md focus:outline-none focus:ring-2 focus:ring-black/20" type="button">
         <span class="sr-only">Toggle navigation</span>
         <span class="block h-0.5 w-6 bg-black"></span>
         <span class="block h-0.5 w-6 bg-black"></span>
@@ -37,13 +37,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col items-center justify-center">
+    <section class="min-h-screen flex flex-col items-center justify-start">
         <div class="flex flex-col lg:flex-row w-full max-w-7xl mx-auto px-6 gap-8 lg:gap-12 flex-grow items-center">
             <!-- Hero Content -->
-            <div class="flex-1 flex items-center justify-center">
-                <div class="text-center">
+            <div class="flex-1 flex items-center justify-center pt-8 md:pt-16">
+                <div class="text-center px-16 md:px-0">
                     <div class="mb-12">
-                        <h1 class="font-railey text-6xl md:text-8xl mb-4">Dylan & Hallie</h1>
+                        <h1 class="font-railey text-6xl md:text-8xl mb-4">Dylan &amp; Hallie</h1>
                         <p class="uppercase font-lancelot text-3xl">June 26, 2026</p>
                         <p class="uppercase font-lancelot text-3xl">St. Augustine, FL</p>
                         <p id="countdown" class="uppercase font-lancelot text-3xl mt-4"></p>
@@ -52,7 +52,7 @@
             </div>
             
             <!-- Image Section -->
-            <div class="flex-1 flex items-center justify-center lg:justify-end order-last">
+            <div class="flex-1 flex items-center justify-center lg:justify-end order-last pt-8 md:pt-16">
                 <img src="images/us.png" alt="Dylan and Hallie" class="max-w-full h-auto max-h-[60vh] object-contain">
             </div>
         </div>
