@@ -9,8 +9,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="min-h-screen">
-    <!-- Navigation -->
-    <nav class="font-lancelot text-3xl fixed top-0 right-0 h-full flex flex-col items-end justify-center pr-8 space-y-2 z-50">
+    <!-- Mobile Menu Button -->
+    <button id="menuButton" aria-controls="mobileMenu" aria-expanded="false" class="md:hidden fixed top-4 right-4 z-50 inline-flex flex-col items-center justify-center gap-1.5 rounded-full border border-black/20 bg-[#949d62]/90 px-3 py-3 shadow-md focus:outline-none focus:ring-2 focus:ring-black/20" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="block h-0.5 w-6 bg-black"></span>
+        <span class="block h-0.5 w-6 bg-black"></span>
+        <span class="block h-0.5 w-6 bg-black"></span>
+    </button>
+
+    <!-- Mobile Menu Panel -->
+    <div id="mobileMenu" class="md:hidden fixed top-16 right-4 z-50 hidden rounded-lg border border-black/15 bg-[#949d62]/95 p-3 shadow-xl">
+        <nav class="font-lancelot text-2xl flex flex-col items-end space-y-2">
+            <a href="events/" class="hover:underline transition-colors">Events</a>
+            <a href="travel/" class="hover:underline transition-colors">Travel</a>
+        </nav>
+    </div>
+
+    <!-- Navigation (desktop) -->
+    <nav class="hidden md:flex font-lancelot text-3xl fixed top-0 right-0 h-full flex-col items-end justify-center pr-8 space-y-2 z-40">
         <a href="events/" class="hover:underline transition-colors">Events</a>
         <a href="travel/" class="hover:underline transition-colors">Travel</a>
         <!-- <a href="" class="hover:underline transition-colors">Our Story</a> -->
@@ -68,5 +84,6 @@
         updateCountdown();
         setInterval(updateCountdown, 60 * 1000);
     </script>
+    <script src="nav.js"></script>
 </body>
 </html>
