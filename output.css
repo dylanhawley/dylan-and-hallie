@@ -627,15 +627,9 @@
     }
   }
 }
-body, section.min-h-screen.flex.items-center.justify-center {
-  background-color: #f9ebde;
-}
 @import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
-.font-imbue-400 {
-  font-family: "Imbue", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+body, section.min-h-screen.flex.items-center.justify-center {
+  background-color: #949d62;
 }
 @font-face {
   font-family: 'Lancelot';
